@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+    background-color: {{background_color_1}};
+}
+#navbar {
+    margin: 0;
+    padding: 0;
+}
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: {{background_color_2}};
+}
+ul.navbar li {
+    float: left;
+}
+
+@media screen and (max-width: 600px) {
+    ul.navbar li {
+        float: none;
+    }
+}
+
+ul.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.navbar li a:hover {
+    background-color: {{accent_color}};
+}
